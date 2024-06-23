@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIZ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    /* Styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .button-grid {
+  display: flex; /* Enable flexbox layout */
+  flex-wrap: wrap; /* Wrap buttons to the next line when space runs out */
+  justify-content: space-between; /* Distribute buttons evenly */
+  width: 100%; /* Ensure buttons fill the available space */
+}
+
+/* Styles for button containers */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Arrange buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  margin-bottom: 20px; /* Add spacing between rows */
+  width: 33%; /* Adjust width for 2 buttons per row */
+}
+
+
+
+    .button-icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background-color: #e0e0e0;
+      background-image: linear-gradient(to right, #e0e0e0 0%, #d3d3d3 100%);
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      color: #cc0000;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cc3333;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Styles for subsectors */
+    .subsector {
+      display: none;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subsector-button {
+      background-color: #ddd;
+      border: none;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .subsector-button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>GIZ</h1>
+
+    <div class="button-grid">
+        <div class="button-container">
+            <img src="icon1.png" alt="Іконка 1" class="button-icon">
+            <button class="button" data-subsector-id="1"> Power sector</button>
+            <div class="subsector" id="subsector-1">
+                <button class="subsector-button" data-link="subsector1-1.html">Primary energy use</button>
+                <button class="subsector-button" data-link="subsector1-2.html">Electricity generation</button>
+                <button class="subsector-button" data-link="subsector1-3.html">Підкнопка 1-3</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <img src="icon1.png" alt="Іконка 1" class="button-icon">
+            <button class="button" data-subsector-id="2"><i class="fas fa-ret"></i> Кнопка 1</button>
+            <div class="subsector" id="subsector-2">
+                <button class="subsector-button" data-link="subsector2-1.html">Підкнопка 1-1</button>
+                <button class="subsector-button" data-link="subsector2-2.html">Підкнопка 1-2</button>
+                <button class="subsector-button" data-link="subsector2-3.html">Підкнопка 1-3</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <img src="icon1.png" alt="Іконка 1" class="button-icon">
+            <button class="button" data-subsector-id="3"><i class="fas fa-e"></i> Кнопка 1</button>
+            <div class="subsector" id="subsector-3">
+                <button class="subsector-button" data-link="subsector3-1.html">Підкнопка 1-1</button>
+                <button class="subsector-button" data-link="subsector3-2.html">Підкнопка 1-2</button>
+                <button class="subsector-button" data-link="subsector3-3.html">Підкнопка 1-3</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <img src="icon1.png" alt="Іконка 1" class="button-icon">
+            <button class="button" data-subsector-id="4"><i class="fas fa-w"></i> Кнопка 1</button>
+            <div class="subsector" id="subsector-4">
+                <button class="subsector-button" data-link="subsector4-1.html">Підкнопка 1-1</button>
+                <button class="subsector-button" data-link="subsector4-2.html">Підкнопка 1-2</button>
+                <button class="subsector-button" data-link="subsector4-3.html">Підкнопка 1-3</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <img src="icon1.png" alt="Іконка 1" class="button-icon">
+            <button class="button" data-subsector-id="5"><i class="fas fa-q"></i> Кнопка 1</button>
+            <div class="subsector" id="subsector-5">
+                <button class="subsector-button" data-link="subsector5-1.html">Підкнопка 1-1</button>
+                <button class="subsector-button" data-link="subsector5-2.html">Підкнопка 1-2</button>
+                <button class="subsector-button" data-link="subsector5-3.html">Підкнопка 1-3</button>
+            </div>
+        </div>
+
+
+              <div class="button-container">
+            <img src="icon2.png" alt="Іконка 2" class="button-icon">
+            <button class="button" data-subsector-id="6"><i class="fas fa-cog"></i> Кнопка 2</button>
+            <div class="subsector" id="subsector-6">
+                <button class="subsector-button" data-link="subsector2-1.html">Підкнопка 2-1</button>
+                <button class="subsector-button" data-link="subsector2-2.html">Підкнопка 2-2</button>
+                <button class="subsector-button" data-link="subsector2-3.html">Підкнопка 2-3</button>
+                </div>
+        </div>
+        </div>
+  <div class="button-grid">
+    <script>
+        // Select all buttons
+        const buttons = document.querySelectorAll('.button');
+      
+        // Select all subsectors
+        const subsectors = document.querySelectorAll('.subsector');
+      
+        // Loop through each button
+        for (const button of buttons) {
+          button.addEventListener('click', function() {
+            // Get the subsector ID from the button's data attribute
+            const subsectorId = button.dataset.subsectorId;
+      
+            // Select the subsector element with the matching ID
+            const subsector = document.getElementById(`subsector-${subsectorId}`);
+      
+            // Close all other subsectors
+            for (const otherSubsector of subsectors) {
+              otherSubsector.style.display = 'none';
+            }
+      
+            // Open the subsector for the clicked button
+            subsector.style.display = 'block';
+      
+            // Handle subsector button clicks (optional)
+            for (const subsectorButton of subsector.querySelectorAll('.subsector-button')) {
+              subsectorButton.addEventListener('click', function(event) {
+                // Prevent default form submission behavior (if applicable)
+                event.preventDefault();
+      
+                // Get the link URL from the button's data attribute
+                const link = subsectorButton.dataset.link;
+      
+                // Redirect the user to the linked HTML page
+                window.location.href = link;
+              });
+            }
+          });
+        }
+      </script>
+  </div>
+</body>
+</html>
